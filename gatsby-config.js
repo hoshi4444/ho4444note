@@ -57,7 +57,6 @@ module.exports = {
       },
     },
     `gatsby-plugin-twitter`,
-    'gatsby-plugin-sitemap',
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
