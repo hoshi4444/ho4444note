@@ -1,0 +1,17 @@
+module.exports = {
+  pathPrefix: '/',
+  title: 'ho4444note',
+  titleAlt: 'ho4444note', 
+  description: '星野の雑記帳',
+  url: 'https://[].netlify.com', 
+  siteURL: 'https://[].netlify.com/', 
+  siteLanguage: 'ja', 
+  logo: 'src/resources/images/shikanoshima.png',
+  banner: 'src/resources/images/shikanoshima.png',
+  favicon: 'src/resources/images/shikanoshima.png', 
+  shortName: 'ho4444note', 
+  author: 'hoshi4444', 
+  themeColor: 'rgba(39,0,255,0,5)',
+  backgroundColor: 'rgba(39,0,255,0,5)',
+  twitter: '@ho4444no',
+};

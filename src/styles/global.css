@@ -1,0 +1,76 @@
+* {
+  color:white;
+}
+
+h1, h2, h3, h4 {
+  color: rgba(39, 0, 255, 0.5);
+  background: -webkit-gradient(linear,left bottom, left top,from(rgba(39, 0, 255, 1)),to(rgba(255, 255, 255, 1)));
+  background: linear-gradient(-5deg,rgba(39, 0, 255, 1),rgba(255, 255, 255, 1));
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+a:hover{
+  color:white;
+}
+
+.wrapper {
+  margin:0 auto;
+  max-width: 1080px;
+}
+
+.top-ajust {
+  padding: 16vh;
+  background-color: rgba(0, 0, 255, 0.3);
+  filter: drop-shadow(2px 4px 6px black);
+}
+
+.has-text-align-center {
+  text-align: center;
+  height: fit-content;
+}
+
+.about {
+  display: flex;
+}
+
+.about-content {
+  width: 50%;
+  margin: 30px;
+}
+
+.gatsby-image-wrapper {
+  margin:0 auto;
+  min-width: 200px;
+  box-shadow: 0 0 10px 5px rgba(0,0,0,0.3);
+}
+
+.gatsby-image-wrapper:hover{
+  box-shadow: 0 0 10px 5px rgba(255,255,255,0.3);
+}
+
+.skill > .wp-block-group__inner-container{
+  display: flex;
+}
+
+.skill-content {
+  width: 50%;
+}
+
+@media screen and (max-width:480px) {
+  
+  .about {
+    display: block;
+  }
+
+  .about-content {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .top-ajust{
+    padding:16vh 4vh;
+  }
+ 
+}
