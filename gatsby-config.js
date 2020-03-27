@@ -30,7 +30,7 @@ module.exports = {
     {
       resolve: `gatsby-source-wordpress`,
       options: {
-        baseUrl: `localhost:80`,
+        baseUrl: `http://ho4444note.xsrv.jp/`,
         protocol: `http`,
         hostingWPCOM: false,
         includedRoutes: [
@@ -43,7 +43,7 @@ module.exports = {
             resolve: `gatsby-wordpress-inline-images`,
             options:
             {
-              baseUrl: `localhost:80`,
+              baseUrl: `http://ho4444note.xsrv.jp/`,
               protocol: `http`
             },
           },
