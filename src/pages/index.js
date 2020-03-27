@@ -9,7 +9,7 @@ export default ({ data }) => {
   console.log(data)
   return (
     <Layout>
-      <SEO title="home" />
+      <SEO />
       <div className={styles.contents}>
         {data.allWordpressPost.edges.map(({ node }) => (
           <div
