@@ -5,10 +5,10 @@ import styles from "../styles/style.module.css"
 
 const Header = ({ siteTitle }) => (
   <header
-    className={styles.headerBase}
+  className={styles.headerBase}
   >
     <div
-      className={'wrapper'}
+    className={'wrapper'}
     >
       <h1>
         <Link to="/"

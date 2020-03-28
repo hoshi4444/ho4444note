@@ -1,27 +1,66 @@
 import React from "react"
 import styles from "../styles/style.module.css"
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { library } from '@fortawesome/fontawesome-svg-core'
-import { fab } from '@fortawesome/free-brands-svg-icons' 
+import PropTypes from "prop-types"
+import {
+  FacebookShareButton,
+  FacebookIcon,
+  TwitterShareButton,
+  TwitterIcon,
+  LinkedinShareButton,
+  LinkedinIcon,
+  LineShareButton,
+  LineIcon,
+  PinterestShareButton,
+  PinterestIcon,
+} from 'react-share';
 
-const footer = ({}) => {
 
-  library.add(fab) 
-
-  return (
+const footer = ({ siteTitle, siteUrl }) => (
     <footer
+    className=
+    {styles.footerContents}
+    >
+      <div
+      className={'wrapper'}
+      >
+        <div
         className=
-        {styles.footerContents}
+        {styles.footerShare}
         >
-          <div
-            className={'wrapper'}
-            >
-            {/* <a href={`https://twitter.com/${social.twitter}`}> */}
-            <FontAwesomeIcon icon={['fab', 'twitter']} /> 
-            {/* </a> */}
+          <div>
+            share!!
           </div>
+          <TwitterShareButton title={siteTitle} url={siteUrl}>
+            <TwitterIcon size={32} round />
+          </TwitterShareButton>
+
+          <LineShareButton url={siteUrl}>
+            <LineIcon size={32} round />
+          </LineShareButton>
+
+          <FacebookShareButton url={siteUrl}>
+            <FacebookIcon size={32} round />
+          </FacebookShareButton>
+
+          <PinterestShareButton url={siteUrl}>
+            <PinterestIcon size={32} round />
+          </PinterestShareButton>
+
+          <LinkedinShareButton url={siteUrl}>
+            <LinkedinIcon title={siteTitle} size={32} round />
+          </LinkedinShareButton>
+        </div>
+      </div>
     </footer>
-  )
+)
+
+footer.propTypes = {
+  siteTitle: PropTypes.string,
 }
+
+footer.defaultProps = {
+  siteTitle: ``,
+}
+
 
 export default footer

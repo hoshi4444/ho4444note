@@ -44,7 +44,7 @@
 }
 
 .contents-list:hover {
-  width:90%;
+  width:100%;
   backdrop-filter: blur(10px);
   background-color:rgba(0, 0, 255, 0.3);
 }
@@ -84,6 +84,11 @@
   background-color: rgba(39, 0, 255, 0.31);
   backdrop-filter: blur(3px) sepia(30%);
   width:100%;
+}
+
+.footer-share {
+  display: flex;
+  justify-content: space-around;
 }
 
 

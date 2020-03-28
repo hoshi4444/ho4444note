@@ -48,7 +48,7 @@ function Bubbles() {
   const dummy = useMemo(() => new Object3D(), [])
   const bubbles = useMemo(
     () =>
-      new Array(20).fill().map((_, i) => ({
+      new Array(10).fill().map((_, i) => ({
         position: [
           i < 5 ? 0 : viewport.width / 2 - Math.random() * viewport.width,
           10- Math.random() * 10,
@@ -121,6 +121,7 @@ const Layout = ({ children }) => {
       site {
         siteMetadata {
           title
+          url
         }
       }
     }
@@ -148,7 +149,10 @@ const Layout = ({ children }) => {
             className=
             {styles.mainContents}
           >{children}</main>
-        <Footer />
+        <Footer
+          siteTitle={data.site.siteMetadata.title}
+          siteUrl={data.site.siteMetadata.url}
+          />
       </div>
     </>
   )
