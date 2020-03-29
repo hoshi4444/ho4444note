@@ -2,8 +2,10 @@ import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
 import styles from "../styles/style.module.css"
+import logo from '../resources/images/ho4444logo.png'
 
-const Header = ({ siteTitle }) => (
+
+const Header = ({ }) => (
   <header
   className={styles.headerBase}
   >
@@ -14,19 +16,22 @@ const Header = ({ siteTitle }) => (
         <Link to="/"
         className={styles.headerTitle}
         >
-          {siteTitle}
+          <img
+          className={styles.headerLogo}
+          src={logo}
+          />
         </Link>
       </h1>
     </div>
   </header>
 )
 
-Header.propTypes = {
-  siteTitle: PropTypes.string,
-}
+// Header.propTypes = {
+//   siteTitle: PropTypes.string,
+// }
 
-Header.defaultProps = {
-  siteTitle: ``,
-}
+// Header.defaultProps = {
+//   siteTitle: ``,
+// }
 
 export default Header

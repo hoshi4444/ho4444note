@@ -122,6 +122,7 @@ const Layout = ({ children }) => {
         siteMetadata {
           title
           url
+          logo
         }
       }
     }
@@ -144,7 +145,7 @@ const Layout = ({ children }) => {
             </Suspense>
           </Canvas>
         </div>
-        <Header siteTitle={data.site.siteMetadata.title} />
+        <Header siteTitle={data.site.siteMetadata.logo} />
           <main
             className=
             {styles.mainContents}

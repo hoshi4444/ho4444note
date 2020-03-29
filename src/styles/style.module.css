@@ -26,6 +26,10 @@
   line-height: 2;
 }
 
+.header-logo {
+  height: 10vh;
+}
+
 /* mein */
 .main-contents {
   width: 100%;
